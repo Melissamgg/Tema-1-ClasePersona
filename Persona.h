@@ -9,16 +9,28 @@
 
 class Persona {
     //Atributos
-public:
+private:
     std::string nombre;
     std::string edad;
 
+public:
     //Métodos
     //Constructor
     Persona();
+    Persona(std::string &nombre, std::string &edad);
+    Persona(std::string &nombre);
 
     //Mostrar información
     std::string muestraPersona();
+
+    //Getters & Setters
+    void setNombre(std::string nombre);
+    void setEdad(std::string edad);
+    std::string &getNombre ();
+    std::string &getEdad();
+
+
+
 };
 
 
